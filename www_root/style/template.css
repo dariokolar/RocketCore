@@ -1,0 +1,118 @@
+
+
+::selection {
+    background: #ED1E79; /* Safari */
+}
+::-moz-selection {
+    background: #ED1E79; /* Firefox */
+}
+
+
+html {height: 100%; }
+body { min-height: 100%;   font-family:  'Open Sans', sans-serif;    position: relative;          margin: auto;     background-color: #F5F5F5;}
+.a{-webkit-transition-property: all;	-webkit-transition-duration: 200ms;	-moz-transition-property: all;	-moz-transition-duration: 200ms;	transition: all 200ms ease-in-out;}
+div,span.body,input,textarea,li,ul {-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box}
+.clear{width:100%; clear: both;}
+input,textarea,select{font-size:10pt;}
+h1, h2, h3, h4, h5, p {margin: 0; padding: 0;}
+
+h1{text-align: center;}
+
+h1 {font-size: 25pt;line-height: 50px;padding: 0 0 0 0;}
+h3 {font-size: 16pt;line-height: 34px;margin: 0 0 10px 0; letter-spacing: 1pt;}
+a {color:black;}
+
+.foot {bottom: 0; position: absolute; width: 100%; padding: 10px;}
+
+ .small {font-size: 8pt; text-align: center;}
+
+
+.main {max-width: 1250px; margin: 0 auto;}
+.main .content{background:white; border-radius: 3px; padding: 10px 10px; margin: 0 0 10px 0;}
+
+.main .left, .main .right{padding: 10px;}
+.main .center{padding: 10px 0;}
+
+.main .center p{padding: 0 0 15px 0;}
+
+.right .galerie{ margin: 0 0 10px 0;}
+.right .galerie a{color:white;}
+.right .galerie .coverimg{width: 100%; position: relative; border-radius: 3px; background-size: cover; background-position: center; height: 150px;  overflow: hidden;}
+.right .galerie .coverimg .inside{bottom: 0; position: absolute; width: 100%; padding: 30px 10px 10px 10px; color:white;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+1,0.65+100 */
+    background: -moz-linear-gradient(top,  rgba(0,0,0,0) 0%, rgba(0,0,0,0) 1%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(0,0,0,0) 0%,rgba(0,0,0,0) 1%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+
+}
+.right .galerie span{ display:block; text-align: right; font-size: 8pt;}
+
+.btn{background:white; border-radius: 3px; padding: 10px 10px; font-size: 10pt;  margin-right: 10px; text-decoration: none;}
+.btn.active{background:black; color:white; }
+.btn.right{float:right; margin-left: 10px; margin-right: 0;}
+
+.aktualita .coverimg{width: 90%; position: relative; border-radius: 3px; background-size: cover; background-position: center; height: 150px;  overflow: hidden;}
+.content .perexImg {max-width: 220px; float:left; padding: 0 10px 10px 0;}
+.content .perex {font-size: 13pt;}
+
+
+.navig{text-align: center;}
+.navig span{display:inline-block; margin: 0 10px 0 0;}
+.navig span a{    background: white; padding: 3px 0 0 0;    color: black;display:inline-block; text-decoration: none;    cursor: pointer;    height: 28px;margin: 0 10px 0 0;    width: 31px;    text-align: center;    border-radius: 50%;}
+.navig span strong{    background: black;display:inline-block;padding: 3px 0 0 0;    color: white;    cursor: pointer;margin: 0 10px 0 0;    height: 28px;    width: 31px;    text-align: center;    border-radius: 50%;}
+
+.right .calendar{ background: white;    border-radius: 3px;    padding: 10px;}
+.right .calendar .prevM, .right .calendar .nextM{background: black;  color: white;  cursor: pointer;  height: 22px;  width: 22px;  text-align: center;  border-radius: 50%;}
+.right .calendar .prevM{float:left;}
+.right .calendar .nextM{float:right;}
+.right .calendar h4{text-align: center;}
+.right .calendar table{width: 100%; margin: 10px 0 0 0; font-size: 10pt;}
+.right .calendar table td{padding: 5px;}
+.right .calendar table .active{background: black; color:white; border-radius: 3px;}
+.right .calendar table .active a{  color:white;}
+.right .calendar table .active .popup{display:none; position: absolute;}
+.right .calendar table .active:hover .popup{/*display:block;*/}
+
+
+.left .menu{ background: black;    border-radius: 3px;  }
+.left .menu a{display:block; color:white; text-decoration: none; padding: 10px 10px;}
+.left .menu a:hover{background: white; color:black;}
+
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11 {min-height:1px; float: left;  position: relative;}
+.col-1:after,.col-2:after,.col-3:after,.col-4:after,.col-5:after,.col-6:after,.col-7:after,.col-8:after,.col-9:after,.col-10:after,.col-11:after{ content: " "; clear: both; display: block; }
+
+.col-1 { width: 8.333333333333332%; }
+.col-2 { width: 16.666666666666664%; }
+.col-3 { width: 25%; }
+.col-4 { width: 33.33333333333333%; }
+.col-5 { width: 41.66666666666667%; }
+.col-6 { width: 50%; }
+.col-7 { width: 58.333333333333336%; }
+.col-8 { width: 66.66666666666666%; }
+.col-9 { width: 75%; }
+.col-10 { width: 83.33333333333334%; }
+.col-11 { width: 91.66666666666666%; }
+.col-12 { width: 100%; }
+
+
+@media screen and (max-width: 720px) {
+
+
+    .col-4 {  width: 100%;  }
+    .col-6, .col-5, .col-7 {  width: 100%;  float: none;  }
+    .col-6 .list-box{ margin: 0 0 15px 0; }
+    .col-2, .col-3 {  width: 50%;    }
+}
+
+
+@media screen and (max-width: 450px) {
+
+
+}
+
+@media screen and (max-width: 340px) {
+    .col-2, .col-3 {  width: 100%;   }
+    .col-1{  width: 50%;    }
+
+}

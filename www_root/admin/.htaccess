@@ -1,0 +1,24 @@
+#php_flag opcache.enable Off
+
+#php_flag display_startup_errors on
+#php_flag display_errors on
+#php_flag html_errors on
+
+RewriteEngine on
+
+
+RewriteRule ^(ckeditor|core|fonts|img|modules|scripts|style)($|/) - [L]
+
+
+RewriteCond  %{HTTP_HOST}  ^[0-9a-zA-Z-]*
+RewriteCond  %{REQUEST_URI}  ^/admin/([0-9a-zA-Z-]*)$
+RewriteRule ([0-9a-zA-Z-]*)$ /admin/index.php?module=$1 [L,QSA]
+
+
+RewriteCond  %{HTTP_HOST}  ^[0-9a-zA-Z-]*
+RewriteCond  %{REQUEST_URI}  ^/admin/([0-9a-zA-Z-]*)/([0-9a-zA-Z-]*)
+RewriteRule ([0-9a-zA-Z-]*)/([0-9a-zA-Z-]*) /admin/index.php?module=$1&page=$2 [L,QSA]
+
+RewriteCond  %{HTTP_HOST}  ^[0-9a-zA-Z-]*
+RewriteCond  %{REQUEST_URI}  ^/admin/([0-9a-zA-Z-]*)/
+RewriteRule ([0-9a-zA-Z-]*) /admin/index.php?module=$1 [L,QSA]

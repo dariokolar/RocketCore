@@ -1,0 +1,40 @@
+#php_flag opcache.enable Off
+
+#php_flag display_startup_errors on
+#php_flag display_errors on
+#php_flag html_errors on
+
+
+RewriteEngine on
+
+RewriteCond  %{REQUEST_URI}  ^/sitemap.xml$
+RewriteRule .*$ /sitemap.php [L,QSA]
+                                                 
+RewriteRule ^(admin|files|fonts|cron|img|layout|scripts|src|style|facebook)($|/) - [L]
+
+RewriteCond  %{HTTP_HOST}  ^[0-9a-zA-Z-]*
+RewriteCond  %{REQUEST_URI}  ^/([0-9a-zA-Z-]*)$
+RewriteRule ([0-9a-zA-Z-]*)$ /index.php?p=$1 [L,QSA]
+
+
+#RewriteCond  %{HTTP_HOST}  ^[0-9a-zA-Z-]*
+#RewriteCond  %{REQUEST_URI}  ^/([0-9a-zA-Z-]*)/([0-9a-zA-Z-]*)/([0-9a-zA-Z-]*)/([0-9a-zA-Z-]*)
+#RewriteRule ([0-9a-zA-Z-]*)/([0-9a-zA-Z-]*)/([0-9a-zA-Z-]*)/([0-9a-zA-Z-]*) /index.php?p=$1&rew=$4&cat=$2&sub=$3 [L,QSA]
+
+RewriteCond  %{HTTP_HOST}  ^[0-9a-zA-Z-]*
+RewriteCond  %{REQUEST_URI}  ^/([0-9a-zA-Z-]*)/([0-9a-zA-Z-]*)/([0-9a-zA-Z-]*)
+RewriteRule ([0-9a-zA-Z-]*)/([0-9a-zA-Z-]*)/([0-9a-zA-Z-]*) /index.php?p=$1&rew=$2&cat=$3 [L,QSA]
+
+
+RewriteCond  %{HTTP_HOST}  ^[0-9a-zA-Z-]*
+RewriteCond  %{REQUEST_URI}  ^/([0-9a-zA-Z-]*)/([0-9a-zA-Z-]*)/
+RewriteRule ([0-9a-zA-Z-]*)/([0-9a-zA-Z-]*) /index.php?p=$1&rew=$2 [L,QSA]
+
+
+RewriteCond  %{HTTP_HOST}  ^[0-9a-zA-Z-]*
+RewriteCond  %{REQUEST_URI}  ^/([0-9a-zA-Z-]*)/([0-9a-zA-Z-]*)
+RewriteRule ([0-9a-zA-Z-]*)/([0-9a-zA-Z-]*) /index.php?p=$1&rew=$2 [L,QSA]
+
+RewriteCond  %{HTTP_HOST}  ^[0-9a-zA-Z-]*
+RewriteCond  %{REQUEST_URI}  ^/([0-9a-zA-Z-]*)/
+RewriteRule ([0-9a-zA-Z-]*) /index.php?p=$1 [L,QSA]

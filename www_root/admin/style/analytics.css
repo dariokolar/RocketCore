@@ -1,0 +1,78 @@
+
+
+.statistics {}
+.statistics .chart{width: 1004px;margin: 0 0 0 -4px;}
+.statistics .chart .col{float: left;width: 32px;}
+.statistics .chart .col .space{height: 300px;position: relative;}
+.statistics .chart .col .space .val{overflow: hidden; height: 0px; position: absolute;bottom: 0;background: #292929;width: 22px;left: 5px;text-align: center;color: white;border-radius: 2px;padding: 4px 0 6px 0;font-size: 7pt;}
+.statistics .chart .col .space:hover .val{box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.32);}
+.statistics .chart .col .date{text-align: center;}
+.statistics .chart .col .datefull{display:none;}
+
+.mover{position: absolute;top: 0; z-index: 9999; box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.32);height: 58px;width: 100px;padding: 2px 7px;border-radius: 2px;opacity: 0;background: white;
+    -webkit-transition-property: opacity;	-webkit-transition-duration: 200ms;	-moz-transition-property: opacity;	-moz-transition-duration: 200ms;	transition: opacity 200ms ease-in-out;}
+.mover .val{font-size: 16pt;}
+.mover .date{font-size: 10pt;}
+
+
+.statistics .devices {width: 600px;height: 100px;margin-top: 40px;float: left;}
+.statistics .devices .title{}
+.statistics .devices .device .percents{float:left;font-size: 22pt;padding: 0 10px;width: 110px;}
+.statistics .devices .device .text{float: left;padding: 0 10px;}
+.statistics .devices .device{width: 200px;height: 50px;float: left;}
+.statistics .devices .device .icon{float:left; background: #292929;color: white;width: 60px;height: 60px;border-radius: 60px;text-align: center;font-size: 28pt;padding: 3px;}
+
+.statistics .time{float:left}
+.statistics .time .circle{background: #292929;
+    width: 80px;
+    height: 80px;
+    border-radius: 61px;
+    margin: 34px 0 4px 0;
+    text-align: center;
+    color: white;
+    font-size: 22pt;
+    padding: 19px 0px;}
+.statistics .time .title {width: 180px;}
+
+.statistics .realtime{float: left;
+    margin: 0 0 0 30px;}
+.statistics .realtime .num{background: #292929;
+    width: 80px;
+    height: 80px;
+    border-radius: 61px;
+    margin: 34px 0 4px 0;
+    text-align: center;
+    color: white;
+    font-size: 22pt;
+    padding: 19px 0px;}
+.statistics .realtime .text{width: 160px;}
+
+.statistics .pages{float: left;width: 600px;margin: 35px 0 0 0;}
+.statistics .pages .page{height: 42px;}
+.statistics .pages .page .title{float: left;
+    height: 30px;
+    width: 475px;
+    padding: 10px;}
+.statistics .pages .page .percents{float: right;
+    height: 30px;
+    width: 125px;
+    font-size: 16pt;}
+
+.statistics .countries{float: left;width: 384px;margin: 35px 0 0 0;}
+.statistics .countries .country{height: 52px;}
+.statistics .countries .country .icon{float: left;
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    border-radius: 40px;
+    background-position: center;}
+.statistics .countries .country .title{float: left;
+    height: 40px;
+    width: 250px;
+    padding: 10px;}
+.statistics .countries .country .percents{float: right;
+    height: 40px;
+    width: 65px;
+    font-size: 16pt;}
+
+
